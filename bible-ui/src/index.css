@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap");
+
+:root {
+  --ink: #1b1712;
+  --muted: #6d6257;
+  --paper: #f2ecdf;
+  --panel: #fbf7f0;
+  --accent: #b0622b;
+  --accent-strong: #8f4a1a;
+  --sage: #2f5e52;
+
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--ink);
+  background-color: var(--paper);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--paper);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Fraunces", "Times New Roman", serif;
+}
+
+a {
+  color: var(--accent-strong);
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  border-radius: 999px;
+  padding: 0.55rem 1.4rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-family: inherit;
+  background: var(--accent);
+  color: #fffaf3;
+  cursor: pointer;
+  box-shadow: 0 12px 24px rgba(133, 86, 40, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 16px 30px rgba(133, 86, 40, 0.3);
+}
+
+button:disabled {
+  background: rgba(176, 140, 105, 0.5);
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+select,
+textarea,
+input {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(130, 110, 90, 0.3);
+  background: #fffaf2;
+  padding: 0.55rem 0.7rem;
+  font-size: 0.95rem;
+  color: var(--ink);
+  font-family: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+select:focus,
+textarea:focus,
+input:focus {
+  outline: none;
+  border-color: rgba(176, 110, 35, 0.6);
+  box-shadow: 0 0 0 3px rgba(176, 110, 35, 0.15);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 72px;
+}
+
+.button-secondary {
+  background: transparent;
+  color: var(--accent-strong);
+  box-shadow: none;
+  border: 1px solid rgba(176, 110, 35, 0.5);
+}
+
+.button-secondary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 18px rgba(133, 86, 40, 0.2);
+}
