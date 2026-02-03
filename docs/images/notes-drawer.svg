@@ -1,7 +1,46 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
-  <rect width="1200" height="675" fill="#f3ede1" />
-  <rect x="120" y="110" width="700" height="455" rx="24" fill="#ffffff" stroke="#d8c9b5" />
-  <rect x="860" y="110" width="240" height="455" rx="24" fill="#fff8ef" stroke="#d8c9b5" />
-  <text x="470" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" fill="#6d6257">Notes Drawer Screenshot</text>
-  <text x="470" y="370" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#9a8c7c">Replace this placeholder with a real capture</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5efe4"/>
+      <stop offset="100%" stop-color="#f1e6d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="#2a231d" opacity="0.25"/>
+
+  <!-- Faded workspace -->
+  <rect x="60" y="40" width="1180" height="790" rx="26" fill="#f7f1e6" opacity="0.6"/>
+
+  <!-- Notes drawer -->
+  <rect x="1230" y="0" width="370" height="900" rx="0" fill="#fbf7f0" stroke="#d9c9b6"/>
+  <text x="1270" y="60" font-family="Arial, sans-serif" font-size="12" fill="#6d6257" letter-spacing="2">STUDY NOTES</text>
+  <text x="1270" y="95" font-family="Georgia, serif" font-size="26" fill="#1b1712" font-weight="700">Notes</text>
+  <rect x="1460" y="55" width="110" height="36" rx="18" fill="#fffaf2" stroke="#d9c9b6"/>
+  <text x="1515" y="79" font-family="Arial, sans-serif" font-size="14" fill="#b0622b" text-anchor="middle">Close</text>
+
+  <!-- Form fields -->
+  <text x="1270" y="160" font-family="Arial, sans-serif" font-size="12" fill="#6d6257" letter-spacing="2">TITLE</text>
+  <rect x="1270" y="175" width="300" height="40" rx="10" fill="#fffaf2" stroke="#e0d2c2"/>
+  <text x="1290" y="202" font-family="Arial, sans-serif" font-size="14" fill="#1b1712">Who is Nicodemus?</text>
+
+  <text x="1270" y="250" font-family="Arial, sans-serif" font-size="12" fill="#6d6257" letter-spacing="2">REFERENCE</text>
+  <rect x="1270" y="265" width="300" height="40" rx="10" fill="#fffaf2" stroke="#e0d2c2"/>
+  <text x="1290" y="292" font-family="Arial, sans-serif" font-size="14" fill="#1b1712">John 3:1</text>
+
+  <rect x="1270" y="320" width="200" height="36" rx="18" fill="#fffaf2" stroke="#d9c9b6"/>
+  <text x="1370" y="343" font-family="Arial, sans-serif" font-size="13" fill="#b0622b" text-anchor="middle">Unpin from passage</text>
+
+  <text x="1270" y="385" font-family="Arial, sans-serif" font-size="12" fill="#6d6257" letter-spacing="2">TAGS</text>
+  <rect x="1270" y="400" width="300" height="40" rx="10" fill="#fffaf2" stroke="#e0d2c2"/>
+  <text x="1290" y="427" font-family="Arial, sans-serif" font-size="14" fill="#1b1712">Nicodemus</text>
+
+  <text x="1270" y="485" font-family="Arial, sans-serif" font-size="12" fill="#6d6257" letter-spacing="2">CONTENT</text>
+  <rect x="1270" y="500" width="300" height="240" rx="12" fill="#fffaf2" stroke="#e0d2c2"/>
+  <text x="1290" y="530" font-family="Arial, sans-serif" font-size="14" fill="#1b1712">Nicodemus was a prominent Jewish leader...</text>
+
+  <rect x="1270" y="780" width="120" height="36" rx="18" fill="#fffaf2" stroke="#d9c9b6"/>
+  <text x="1330" y="804" font-family="Arial, sans-serif" font-size="13" fill="#b0622b" text-anchor="middle">Clear</text>
+
+  <rect x="1450" y="780" width="120" height="36" rx="18" fill="#b0622b"/>
+  <text x="1510" y="804" font-family="Arial, sans-serif" font-size="13" fill="#fffaf3" text-anchor="middle">Save Note</text>
 </svg>

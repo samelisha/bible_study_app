@@ -1,6 +1,73 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
-  <rect width="1200" height="675" fill="#f3ede1" />
-  <rect x="80" y="90" width="1040" height="495" rx="24" fill="#ffffff" stroke="#d8c9b5" />
-  <text x="600" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" fill="#6d6257">Study Workspace Screenshot</text>
-  <text x="600" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#9a8c7c">Replace this placeholder with a real capture</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5efe4"/>
+      <stop offset="100%" stop-color="#f1e6d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+
+  <!-- Header -->
+  <rect x="60" y="40" width="1480" height="140" rx="24" fill="#faf5ed" stroke="#d9c9b6"/>
+  <rect x="90" y="70" width="80" height="56" rx="16" fill="#b0622b"/>
+  <text x="130" y="107" font-family="Arial, sans-serif" font-size="22" fill="#fffaf3" text-anchor="middle" font-weight="700">KJV</text>
+
+  <text x="190" y="78" font-family="Arial, sans-serif" font-size="12" fill="#6d6257" letter-spacing="2">ELISHA'S BIBLE STUDY WORKSPACE</text>
+  <text x="190" y="120" font-family="Georgia, serif" font-size="32" fill="#1b1712" font-weight="700">Clarke + KJV Companion</text>
+
+  <!-- Dropdowns -->
+  <text x="620" y="80" font-family="Arial, sans-serif" font-size="12" fill="#6d6257" letter-spacing="2">BOOK</text>
+  <rect x="610" y="90" width="200" height="38" rx="10" fill="#fffaf2" stroke="#d9c9b6"/>
+  <text x="625" y="116" font-family="Arial, sans-serif" font-size="16" fill="#1b1712">John</text>
+
+  <text x="840" y="80" font-family="Arial, sans-serif" font-size="12" fill="#6d6257" letter-spacing="2">CHAPTER</text>
+  <rect x="830" y="90" width="160" height="38" rx="10" fill="#fffaf2" stroke="#d9c9b6"/>
+  <text x="845" y="116" font-family="Arial, sans-serif" font-size="16" fill="#1b1712">3</text>
+
+  <text x="1010" y="80" font-family="Arial, sans-serif" font-size="12" fill="#6d6257" letter-spacing="2">VERSE</text>
+  <rect x="1000" y="90" width="160" height="38" rx="10" fill="#fffaf2" stroke="#d9c9b6"/>
+  <text x="1015" y="116" font-family="Arial, sans-serif" font-size="16" fill="#1b1712">All</text>
+
+  <text x="1350" y="78" font-family="Arial, sans-serif" font-size="12" fill="#6d6257">AI grounded in KJV + Adam Clarke</text>
+  <text x="1350" y="118" font-family="Arial, sans-serif" font-size="18" fill="#1b1712" font-weight="600">John 3:1</text>
+  <rect x="1430" y="90" width="90" height="38" rx="19" fill="#fffaf2" stroke="#d9c9b6"/>
+  <text x="1475" y="116" font-family="Arial, sans-serif" font-size="14" fill="#b0622b" text-anchor="middle">Notes</text>
+
+  <!-- Panels -->
+  <rect x="60" y="210" width="920" height="620" rx="26" fill="#fbf7f0" stroke="#d9c9b6"/>
+  <rect x="1020" y="210" width="520" height="620" rx="26" fill="#fbf7f0" stroke="#d9c9b6"/>
+
+  <!-- KJV panel header -->
+  <text x="100" y="255" font-family="Arial, sans-serif" font-size="12" fill="#6d6257" letter-spacing="2">KJV SCRIPTURE</text>
+  <text x="100" y="290" font-family="Georgia, serif" font-size="26" fill="#1b1712" font-weight="700">John 3</text>
+  <text x="900" y="290" font-family="Arial, sans-serif" font-size="14" fill="#6d6257" text-anchor="end">36 verses</text>
+
+  <!-- Verse blocks -->
+  <rect x="90" y="330" width="860" height="50" rx="14" fill="#efe1cf"/>
+  <text x="115" y="362" font-family="Arial, sans-serif" font-size="14" fill="#6d6257">1</text>
+  <text x="150" y="362" font-family="Arial, sans-serif" font-size="16" fill="#1b1712">There was a man of the Pharisees, named Nicodemus...</text>
+
+  <rect x="90" y="395" width="860" height="80" rx="14" fill="#f6eee4"/>
+  <text x="115" y="430" font-family="Arial, sans-serif" font-size="14" fill="#6d6257">2</text>
+  <text x="150" y="430" font-family="Arial, sans-serif" font-size="16" fill="#1b1712">The same came to Jesus by night, and said unto him...</text>
+
+  <text x="115" y="510" font-family="Arial, sans-serif" font-size="14" fill="#6d6257">3</text>
+  <text x="150" y="510" font-family="Arial, sans-serif" font-size="16" fill="#1b1712">Verily, verily, I say unto thee, Except a man be born again...</text>
+
+  <!-- AI panel header -->
+  <text x="1060" y="255" font-family="Arial, sans-serif" font-size="12" fill="#6d6257" letter-spacing="2">AI STUDY ASSISTANT</text>
+  <text x="1060" y="290" font-family="Georgia, serif" font-size="24" fill="#1b1712" font-weight="700">John 3:1</text>
+  <text x="1500" y="290" font-family="Arial, sans-serif" font-size="12" fill="#6d6257" text-anchor="end">Grounded in KJV + Clarke</text>
+
+  <!-- AI response bubble -->
+  <rect x="1060" y="330" width="440" height="200" rx="16" fill="#fffaf2" stroke="#e0d2c2"/>
+  <text x="1085" y="360" font-family="Arial, sans-serif" font-size="14" fill="#1b1712">- Commentary confidence: strong</text>
+  <text x="1085" y="382" font-family="Arial, sans-serif" font-size="14" fill="#1b1712">- Answer: Nicodemus was a Pharisee...</text>
+  <text x="1085" y="404" font-family="Arial, sans-serif" font-size="14" fill="#1b1712">- Scripture support: John 3:1-2</text>
+
+  <!-- AI input -->
+  <rect x="1060" y="570" width="440" height="90" rx="16" fill="#fffaf2" stroke="#e0d2c2"/>
+  <text x="1085" y="610" font-family="Arial, sans-serif" font-size="14" fill="#9a8c7c">Ask about this passage...</text>
+  <rect x="1060" y="680" width="110" height="36" rx="18" fill="#c9b19b"/>
+  <text x="1115" y="704" font-family="Arial, sans-serif" font-size="14" fill="#fffaf3" text-anchor="middle">Ask</text>
 </svg>
