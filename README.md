@@ -8,6 +8,12 @@ A Bible study app with a FastAPI backend and a React (Vite) frontend. The app lo
 - AI study assistant grounded in KJV + Adam Clarke
 - Notes drawer with create/edit, search, and pin-to-passage
 
+## Screenshots
+![Study Workspace](docs/images/study-workspace.svg)
+![Notes Drawer](docs/images/notes-drawer.svg)
+
+Replace the placeholder SVGs in `docs/images/` with real screenshots whenever you're ready.
+
 ## Project Structure
 - `app/` – FastAPI backend (API routes, services, DB access)
 - `bible-ui/` – React + Vite frontend
@@ -73,6 +79,47 @@ API will be available at `http://localhost:8000` with Swagger at `/docs`.
 - `POST /notes` – create a note
 - `PUT /notes/{id}` – update a note
 
+### API Examples
+List canonical books:
+
+```
+curl "http://localhost:8000/metadata/books"
+```
+
+Get chapters for John:
+
+```
+curl "http://localhost:8000/metadata/chapters?book=John"
+```
+
+Fetch KJV verses (single verse):
+
+```
+curl "http://localhost:8000/verses?book=John&chapter=3&verse=16"
+```
+
+Ask the AI a question:
+
+```
+curl -X POST "http://localhost:8000/ai/study" \\
+  -H "Content-Type: application/json" \\
+  -d '{\"question\":\"Who is Nicodemus?\",\"book\":\"John\",\"chapter\":3}'
+```
+
+Create a note:
+
+```
+curl -X POST "http://localhost:8000/notes/" \\
+  -H "Content-Type: application/json" \\
+  -d '{\"title\":\"Nicodemus\",\"content\":\"A Pharisee who came to Jesus by night.\",\"verse_ref\":\"John 3:1\"}'
+```
+
+List notes for a passage:
+
+```
+curl "http://localhost:8000/notes?verse_ref=John%203"
+```
+
 ## Frontend (Vite + React)
 Install dependencies:
 
@@ -88,6 +135,33 @@ npm run dev
 ```
 
 Frontend runs at `http://localhost:5173`.
+
+## Deployment (Simple)
+1. Update the frontend API base before building:
+   - Edit `bible-ui/src/services/api.ts` and change `API_BASE` to your production API URL.
+2. Update CORS in `app/main.py` to allow your production frontend origin.
+3. Build the frontend:
+
+```
+cd bible-ui
+npm install
+npm run build
+```
+
+4. Serve the frontend static files (example using a simple static server):
+
+```
+cd bible-ui/dist
+python -m http.server 4173
+```
+
+5. Run the API in production mode:
+
+```
+uvicorn app.main:app --host 0.0.0.0 --port 8000
+```
+
+For a production deployment, place a reverse proxy (Nginx/Caddy) in front of both services and enable HTTPS.
 
 ## Embeddings + LLM
 - Embeddings: `sentence-transformers/all-MiniLM-L6-v2`

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#f3ede1" />
+  <rect x="120" y="110" width="700" height="455" rx="24" fill="#ffffff" stroke="#d8c9b5" />
+  <rect x="860" y="110" width="240" height="455" rx="24" fill="#fff8ef" stroke="#d8c9b5" />
+  <text x="470" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" fill="#6d6257">Notes Drawer Screenshot</text>
+  <text x="470" y="370" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#9a8c7c">Replace this placeholder with a real capture</text>
+</svg>
