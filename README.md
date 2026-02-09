@@ -14,6 +14,16 @@ A Bible study app with a FastAPI backend and a React (Vite) frontend. The app lo
 
 Replace the placeholder SVGs in `docs/images/` with real screenshots whenever you're ready.
 
+## Install on iPhone (PWA)
+1. Deploy the frontend and backend over HTTPS (required by iOS for installable web apps).
+2. Open the app in Safari on your iPhone.
+3. Tap the Share icon, then **Add to Home Screen**.
+4. Launch it from your home screen like a native app.
+
+Notes:
+- The AI still runs on your backend (Ollama or other LLM); the iPhone only calls the API.
+- If you change the server URL, update `bible-ui/src/services/api.ts` and rebuild.
+
 ## Project Structure
 - `app/` – FastAPI backend (API routes, services, DB access)
 - `bible-ui/` – React + Vite frontend
