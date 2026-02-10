@@ -1,11 +1,16 @@
 .study-shell {
   min-height: 100vh;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   position: relative;
   color: var(--ink);
-  overflow: hidden;
+  overflow-x: hidden;
+}
+
+@supports (height: 100dvh) {
+  .study-shell {
+    min-height: 100dvh;
+  }
 }
 
 .study-backdrop {
@@ -236,6 +241,7 @@
   padding-right: 6px;
   min-height: 0;
   flex: 1;
+  -webkit-overflow-scrolling: touch;
 }
 
 .panel-empty {
@@ -383,6 +389,7 @@
   overflow-y: auto;
   flex: 1;
   padding-right: 4px;
+  -webkit-overflow-scrolling: touch;
 }
 
 .notes-list {
@@ -537,6 +544,24 @@
 
   .study-main {
     grid-template-columns: 1fr;
+    flex: none;
+    min-height: auto;
+  }
+
+  .study-panel {
+    height: auto;
+  }
+
+  .panel-body {
+    min-height: auto;
+  }
+
+  .panel-scroll {
+    overflow: visible;
+  }
+
+  .chat-scroll {
+    flex: none;
   }
 }
 

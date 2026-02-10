@@ -8,7 +8,7 @@ app = FastAPI(title="Bible Study API")
 # ✅ CORS (required for Safari + Vite)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=["https://app.samelisha.com"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

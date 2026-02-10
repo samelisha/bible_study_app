@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:8000"
+const API_BASE = "https://api.samelisha.com"
 
 export async function fetchVerses(
   book: string,
